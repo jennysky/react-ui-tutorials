@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1713644699264,
@@ -40,6 +40,10 @@
                 {
                     "date": 1713707965571,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function App() {\n-import { Counter } from './components/Counter/Counter';\n+\n   return <div>\n \n     <title>Counter</title>\n     <Counter />\n"
+                },
+                {
+                    "date": 1713874915153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n+import { Counter } from \"./components/Counter\"\n+\n function App() {\n-\n-  return <div>\n-\n-    <title>Counter</title>\n-    <Counter />\n-  </div>;\n+  return (\n+    <div>\n+      <title>Counter</title>\n+      <Counter />\n+    </div>\n+  )\n }\n \n-export default App;\n+export default App\n"
                 }
             ],
             "date": 1713644699264,

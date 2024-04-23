@@ -1,64 +1,73 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect } from "react"
 
 export const Counter = () => {
-  const [count, setCount] = React.useState(null)
+  const [count, setCount] = React.useState(0)
   const [pause, setPause] = React.useState(false)
+  const countRef = React.useRef(null)
 
-  const countRef = useRef(null)
-
-  //   const increment = () => {
-  //     setCount((count) => count + 1)
-  //     setCount((count) => count + 1)
-  //   }
-
-  //   const decrement = () => {
-  //     setCount(count - 1)
-  //   }
-
-  //   console.log("count ", +countRef?.current?.innerText)
-  //   useEffect(() => {
-  //     console.log("useEffect called")
-  //     return () => {
-  //       console.log("useEffect cleanup called")
-  //     }
-  //   })
+  console.log("count ", countRef?.current?.textContent)
 
   useEffect(() => {
-    let intVal
-    if (!pause) {
-      console.log("setInterval called")
+    console.log("useEffect render ")
 
-      intVal = setInterval(() => {
-        setCount((count) => count + 1)
-        //countRef.current.innerText = +countRef.current.innerText + 1
+    return () => {
+      console.log("useEffect cleanup")
+    }
+  })
+
+  useEffect(() => {
+    let interval
+
+    if (!pause) {
+      console.log("setInterval")
+
+      interval = setInterval(() => {
+        console.log("increment")
+        countRef.current.textContent = +countRef.current.textContent + 1
+
+        //setCount((c) => c + 1)
       }, 1000)
     }
 
     return () => {
-      console.log("clearInterval called")
-
-      clearInterval(intVal)
+      console.log("clearInterval")
+      clearInterval(interval)
     }
   }, [pause])
 
+  // const incrementTwice = () => {
+  //   increment()
+  //   increment()
+  // }
+
+  // const decrementTwice = () => {
+  //   decrement()
+  //   decrement()
+  // }
+
+  // const increment = () => {
+  //   setCount((c) => c + 1)
+  // }
+
+  // const decrement = () => {
+  //   setCount((count) => count - 1)
+  // }
+
   const onPause = () => {
-    console.log("onPause called")
-    //clearInterval(intVal)
+    console.log("onPause")
     setPause((p) => !p)
   }
-
 
   return (
     <div>
       <h1>Counter</h1>
       <div>
-        <span>Counter:</span>
-
-        <span ref={countRef}>{count}</span>
+        <span>Count:</span>
+        <span ref={countRef}>{0}</span>
       </div>
       <button onClick={onPause}>{pause ? "Resume" : "Pause"}</button>
-      {/* <button onClick={increment}>Increment twice</button>
-      <button onClick={decrement}>Decrement</button> */}
+      {/* <button onClick={incrementTwice}>Increment twice</button>
+      <button onClick={decrementTwice}>Decrement twice</button> */}
     </div>
   )
 }
