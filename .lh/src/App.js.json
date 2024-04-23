@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1713644699264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713706988858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,7 @@\n-import logo from './logo.svg';\n-import './App.css';\n+import \"./App.css\";\n \n function App() {\n-  return (\n-    <div className=\"App\">\n-      <header className=\"App-header\">\n-      \n-      </header>\n-    </div>\n-  );\n+  return <div className=\"App\">hello</div>;\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1713706994708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n-import \"./App.css\";\n \n function App() {\n-  return <div className=\"App\">hello</div>;\n+  return <div >hello</div>;\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1713707551616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n+function App() {\n+  return <div>\n \n-function App() {\n-  return <div >hello</div>;\n+    \n+  </div>;\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1713707557830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function App() {\n   return <div>\n \n-    \n+    <title>Counter</title>\n   </div>;\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1713707563350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n function App() {\n   return <div>\n \n     <title>Counter</title>\n+    <Counter />\n   </div>;\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1713707638428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,4 +6,6 @@\n   </div>;\n }\n \n export default App;\n+\"javascript.suggest.autoImports\": true,\n+\"typescript.suggest.autoImports\": true\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1713707958655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,10 @@\n function App() {\n+import { Counter } from './components/Counter/Counter';\n   return <div>\n \n     <title>Counter</title>\n     <Counter />\n   </div>;\n }\n \n export default App;\n-\"javascript.suggest.autoImports\": true,\n\\ No newline at end of file\n-\"typescript.suggest.autoImports\": true\n"
+                },
+                {
+                    "date": 1713707965571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function App() {\n-import { Counter } from './components/Counter/Counter';\n+\n   return <div>\n \n     <title>Counter</title>\n     <Counter />\n"
+                }
+            ],
+            "date": 1713644699264,
+            "name": "Commit-0",
+            "content": "import logo from './logo.svg';\nimport './App.css';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n      <header className=\"App-header\">\n      \n      </header>\n    </div>\n  );\n}\n\nexport default App;\n"
+        }
+    ]
+}

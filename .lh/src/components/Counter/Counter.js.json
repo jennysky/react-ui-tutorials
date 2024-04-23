@@ -1,0 +1,146 @@
+{
+    "sourceFile": "src/components/Counter/Counter.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 32,
+            "patches": [
+                {
+                    "date": 1713707516220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713707522487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-export \n\\ No newline at end of file\n+export const Counter = () => {\n+\n+    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1713707530126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export const Counter = () => {\n \n-    \n\\ No newline at end of file\n+    r\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1713707537353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,9 @@\n export const Counter = () => {\n \n-    r\n\\ No newline at end of file\n+    return (\n+        <div>\n+            <h1>Counter</h1>\n+            <p>Current count: 0</p>\n+            <button>Increment</button>\n+            <button>Decrement</button>  \n+            \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1713707542820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,7 @@\n             <h1>Counter</h1>\n             <p>Current count: 0</p>\n             <button>Increment</button>\n             <button>Decrement</button>  \n-            \n\\ No newline at end of file\n+        </div>\n+    );\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1713713587425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n export const Counter = () => {\n-\n-    return (\n-        <div>\n-            <h1>Counter</h1>\n-            <p>Current count: 0</p>\n-            <button>Increment</button>\n-            <button>Decrement</button>  \n-        </div>\n-    );\n-}\n\\ No newline at end of file\n+    \\\n+  return (\n+    <div>\n+      <h1>Counter</h1>\n+      <p>Current count: 0</p>\n+      <button>Increment</button>\n+      <button>Decrement</button>\n+    </div>\n+  )\n+}\n"
+                },
+                {
+                    "date": 1713713592684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n export const Counter = () => {\n-    \\\n+    \n+    \n   return (\n     <div>\n       <h1>Counter</h1>\n       <p>Current count: 0</p>\n"
+                },
+                {
+                    "date": 1713717014172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n export const Counter = () => {\n-    \n-    \n+    const \n+\n   return (\n     <div>\n       <h1>Counter</h1>\n       <p>Current count: 0</p>\n"
+                },
+                {
+                    "date": 1713717032064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n export const Counter = () => {\n-    const \n+    const [count]\n+    \n \n   return (\n     <div>\n       <h1>Counter</h1>\n"
+                },
+                {
+                    "date": 1713717089841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n export const Counter = () => {\n-    const [count]\n-    \n+        const [count, setCount] = useState(0)\n \n-  return (\n-    <div>\n-      <h1>Counter</h1>\n-      <p>Current count: 0</p>\n-      <button>Increment</button>\n-      <button>Decrement</button>\n-    </div>\n+    return (\n+        <div>\n+            <h1>Counter</h1>\n+            <p>Current count: 0</p>\n+            <button>Increment</button>\n+            <button>Decrement</button>\n+        </div>\n+    )\n   )\n }\n"
+                },
+                {
+                    "date": 1713717177666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n         const [count, setCount] = useState(0)\n \n     return (\n         <div>\n-            <h1>Counter</h1>\n+            <h1>Counter</8h1>\n             <p>Current count: 0</p>\n             <button>Increment</button>\n             <button>Decrement</button>\n         </div>\n"
+                },
+                {
+                    "date": 1713718377244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n         const [count, setCount] = useState(0)\n \n     return (\n         <div>\n-            <h1>Counter</8h1>\n+            <h1>Counter</h1>\n             <p>Current count: 0</p>\n             <button>Increment</button>\n             <button>Decrement</button>\n         </div>\n"
+                },
+                {
+                    "date": 1713718382513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n             <button>Increment</button>\n             <button>Decrement</button>\n         </div>\n     )\n-  )\n+  );\n }\n"
+                },
+                {
+                    "date": 1713719121840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+\n+\n export const Counter = () => {\n         const [count, setCount] = useState(0)\n \n     return (\n@@ -8,6 +10,6 @@\n             <button>Increment</button>\n             <button>Decrement</button>\n         </div>\n     )\n-  );\n+\n }\n"
+                },
+                {
+                    "date": 1713719137613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+export const Counter = () => {\n+    const [count, setCount] = useState(0)\n+\n+    return (\n+        <div>\n+            <h1>Counter</h1>\n+            <p>Current count: {count}</p>\n+            <button>Increment</button>\n+            <button>Decrement</button>\n+        </div>\n+    )\n+  )\n+}\n"
+                },
+                {
+                    "date": 1713719145122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,21 +8,6 @@\n             <button>Increment</button>\n             <button>Decrement</button>\n         </div>\n     )\n-  )\n-}\n \n-\n-export const Counter = () => {\n-        const [count, setCount] = useState(0)\n-\n-    return (\n-        <div>\n-            <h1>Counter</h1>\n-            <p>Current count: 0</p>\n-            <button>Increment</button>\n-            <button>Decrement</button>\n-        </div>\n-    )\n-\n }\n"
+                },
+                {
+                    "date": 1713719153995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+import\n+\n export const Counter = () => {\n     const [count, setCount] = useState(0)\n \n     return (\n"
+                },
+                {
+                    "date": 1713720710678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,14 @@\n-import\n+import React, { useState } from \"react\"\n \n export const Counter = () => {\n-    const [count, setCount] = useState(0)\n+  const [count, setCount] = useState(0)\n \n-    return (\n-        <div>\n-            <h1>Counter</h1>\n-            <p>Current count: {count}</p>\n-            <button>Increment</button>\n-            <button>Decrement</button>\n-        </div>\n-    )\n-\n+  return (\n+    <div>\n+      <h1>Counter</h1>\n+      <p>Current count: {count}</p>\n+      <button on>Increment</button>\n+      <button>Decrement</button>\n+    </div>\n+  )\n }\n"
+                },
+                {
+                    "date": 1713720716463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\n     <div>\n       <h1>Counter</h1>\n       <p>Current count: {count}</p>\n-      <button on>Increment</button>\n+      <button onClick={}>Increment</button>\n       <button>Decrement</button>\n     </div>\n   )\n }\n"
+                },
+                {
+                    "date": 1713720721891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n \n export const Counter = () => {\n   const [count, setCount] = useState(0)\n \n+  \n+\n   return (\n     <div>\n       <h1>Counter</h1>\n       <p>Current count: {count}</p>\n"
+                },
+                {
+                    "date": 1713720728779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,12 @@\n \n export const Counter = () => {\n   const [count, setCount] = useState(0)\n \n+  const increment = () => {\n+    setCount(count + 1)\n+  }\n+\n   \n \n   return (\n     <div>\n"
+                },
+                {
+                    "date": 1713720735126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,17 @@\n   const increment = () => {\n     setCount(count + 1)\n   }\n \n-  \n+    const decrement = () => {\n+        setCount(count - 1)\n+    }\n \n   return (\n     <div>\n       <h1>Counter</h1>\n       <p>Current count: {count}</p>\n-      <button onClick={}>Increment</button>\n+      <button onClick={increment}>Increment</button>\n       <button>Decrement</button>\n     </div>\n   )\n }\n"
+                },
+                {
+                    "date": 1713720742789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n     <div>\n       <h1>Counter</h1>\n       <p>Current count: {count}</p>\n       <button onClick={increment}>Increment</button>\n-      <button>Decrement</button>\n+      <button onC>Decrement</button>\n     </div>\n   )\n }\n"
+                },
+                {
+                    "date": 1713720876029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,29 @@\n   const increment = () => {\n     setCount(count + 1)\n   }\n \n-    const decrement = () => {\n-        setCount(count - 1)\n-    }\n+  const decrement = () => {\n+    setCount(count - 1)\n+  }\n \n+  useEffect(() => {\n+    const intervalId = setInterval(() => {\n+      setCount(count => count + 1); // Note the use of a function in setCount\n+    }, 1000); // Runs every second\n+\n+    // Clean up function\n+    return () => {\n+      clearInterval(intervalId);\n+    };\n+  }, []); // Empty dependency array means this effect runs once on mount and clean up on unmount\n+\n+\n   return (\n     <div>\n       <h1>Counter</h1>\n       <p>Current count: {count}</p>\n       <button onClick={increment}>Increment</button>\n-      <button onC>Decrement</button>\n+      <button onClick={decrement}>Decrement</button>\n     </div>\n   )\n }\n"
+                },
+                {
+                    "date": 1713720937633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import React, { useState } from \"react\"\n+import React, { useState, useEffect } from \"react\"\n \n export const Counter = () => {\n   const [count, setCount] = useState(0)\n \n@@ -12,9 +12,9 @@\n   }\n \n   useEffect(() => {\n     const intervalId = setInterval(() => {\n-      setCount(count => count + 1); // Note the use of a function in setCount\n+      setCount(count + 1); // Note the use of a function in setCount\n     }, 1000); // Runs every second\n \n     // Clean up function\n     return () => {\n"
+                },
+                {
+                    "date": 1713720964559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,18 +12,18 @@\n   }\n \n   useEffect(() => {\n     const intervalId = setInterval(() => {\n-      setCount(count + 1); // Note the use of a function in setCount\n-    }, 1000); // Runs every second\n+        console\n+      setCount(count + 1) // Note the use of a function in setCount\n+    }, 1000) // Runs every second\n \n     // Clean up function\n     return () => {\n-      clearInterval(intervalId);\n-    };\n-  }, []); // Empty dependency array means this effect runs once on mount and clean up on unmount\n+      clearInterval(intervalId)\n+    }\n+  }, [count]) // Empty dependency array means this effect runs once on mount and clean up on unmount\n \n-\n   return (\n     <div>\n       <h1>Counter</h1>\n       <p>Current count: {count}</p>\n"
+                },
+                {
+                    "date": 1713720994968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n   }\n \n   useEffect(() => {\n     const intervalId = setInterval(() => {\n-        console\n-      setCount(count + 1) // Note the use of a function in setCount\n+        console.log('Interval')\n+      setCount(count => count + 1) // Note the use of a function in setCount\n     }, 1000) // Runs every second\n \n     // Clean up function\n     return () => {\n"
+                },
+                {
+                    "date": 1713721003111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     // Clean up function\n     return () => {\n       clearInterval(intervalId)\n     }\n-  }, [count]) // Empty dependency array means this effect runs once on mount and clean up on unmount\n+  }, []) // Empty dependency array means this effect runs once on mount and clean up on unmount\n \n   return (\n     <div>\n       <h1>Counter</h1>\n"
+                },
+                {
+                    "date": 1713721016524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n   }\n \n   useEffect(() => {\n     const intervalId = setInterval(() => {\n-        console.log('Interval')\n-      setCount(count => count + 1) // Note the use of a function in setCount\n+     \n+      setCount((count) => count + 1) // Note the use of a function in setCount\n     }, 1000) // Runs every second\n \n     // Clean up function\n     return () => {\n"
+                },
+                {
+                    "date": 1713721021774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     // Clean up function\n     return () => {\n       clearInterval(intervalId)\n     }\n-  }, []) // Empty dependency array means this effect runs once on mount and clean up on unmount\n+  }, [count]) // Empty dependency array means this effect runs once on mount and clean up on unmount\n \n   return (\n     <div>\n       <h1>Counter</h1>\n"
+                },
+                {
+                    "date": 1713721030272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     // Clean up function\n     return () => {\n       clearInterval(intervalId)\n     }\n-  }, [count]) // Empty dependency array means this effect runs once on mount and clean up on unmount\n+  }, []) // Empty dependency array means this effect runs once on mount and clean up on unmount\n \n   return (\n     <div>\n       <h1>Counter</h1>\n"
+                },
+                {
+                    "date": 1713721605763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,19 +10,19 @@\n   const decrement = () => {\n     setCount(count - 1)\n   }\n \n-  useEffect(() => {\n-    console.log(\"Interval\")\n-    const intervalId = setInterval(() => {\n-      setCount((count) => count + 1) // Note the use of a function in setCount\n-    }, 1000) // Runs every second\n+//   useEffect(() => {\n+//     console.log(\"Interval\")\n+//     const intervalId = setInterval(() => {\n+//       setCount((count) => count + 1) // Note the use of a function in setCount\n+//     }, 1000) // Runs every second\n \n-    // Clean up function\n-    return () => {\n-      clearInterval(intervalId)\n-    }\n-  }, []) // Empty dependency array means this effect runs once on mount and clean up on unmount\n+//     // Clean up function\n+//     return () => {\n+//       clearInterval(intervalId)\n+//     }\n+//   }, []) // Empty dependency array means this effect runs once on mount and clean up on unmount\n \n   return (\n     <div>\n       <h1>Counter</h1>\n"
+                },
+                {
+                    "date": 1713721613227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,11 @@\n   const [count, setCount] = useState(0)\n \n   const increment = () => {\n     setCount(count + 1)\n+    setCount(count + 1)\n+    setCount(count + 1)\n+    setCount(count + 1)\n   }\n \n   const decrement = () => {\n     setCount(count - 1)\n"
+                }
+            ],
+            "date": 1713707516220,
+            "name": "Commit-0",
+            "content": "export "
+        }
+    ]
+}

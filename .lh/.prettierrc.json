@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".prettierrc",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1713707093370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1713707093370,
+            "name": "Commit-0",
+            "content": "{\n    \"printWidth\": 85,\n    \"arrowParens\": \"always\",\n    \"semi\": false,\n    \"tabWidth\": 2\n  }\n  "
+        }
+    ]
+}
